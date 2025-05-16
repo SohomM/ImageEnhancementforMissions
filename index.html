@@ -1,0 +1,184 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Enhancement Project</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f2027;
+      color: white;
+    }
+
+    /* Background Animation */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c1c1c);
+      background-size: 400% 400%;
+      animation: flow 15s ease infinite;
+      z-index: -1;
+      opacity: 0.95;
+    }
+
+    @keyframes flow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      padding: 60px 20px 40px;
+    }
+
+    .column {
+      flex: 1 1 40%;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .column h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #00ffffaa;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .column img {
+      width: 90%;
+      max-width: 400px;
+      margin: 20px auto;
+      border: 2px solid #ffffff33;
+      border-radius: 12px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      display: block;
+    }
+
+    .column img:hover {
+      transform: scale(1.15);
+      box-shadow: 0 10px 20px #00ffff55, 0 0 15px #00ffff88;
+    }
+
+    footer {
+      background-color: #000000aa;
+      color: white;
+      text-align: center;
+      padding: 16px 0;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .column {
+        flex: 1 1 90%;
+      }
+    }
+  </style>
+</head>
+
+<section style="
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(20, 20, 20, 0.9);
+  color: #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00ffff44;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+">
+  <h2 style="color: #00ffff; font-size: 24px; margin-bottom: 10px;">
+    📘 What is Image Enhancement?
+  </h2>
+  <p>
+    Image enhancement improves the visual quality of images using digital techniques. It removes noise, sharpens details, boosts contrast, and reveals hidden patterns for better analysis and presentation.
+  </p>
+
+  <h3 style="color: #00e6e6; font-size: 20px; margin: 20px 0 10px;">
+    🛠️ Key Techniques
+  </h3>
+  <ul style="margin-left: 20px; list-style-type: square;">
+    <li><strong>Denoising</strong> – Clears grainy textures</li>
+    <li><strong>Sharpening</strong> – Defines edges and contours</li>
+    <li><strong>Contrast Adjustment</strong> – Balances light/dark regions</li>
+    <li><strong>Super-Resolution</strong> – Increases resolution and clarity</li>
+  </ul>
+
+  <h2 style="color: #00ffff; font-size: 24px; margin-top: 30px;">
+    🎯 Applications in Defense & Identification
+  </h2>
+  <ul style="margin-left: 20px; list-style-type: square;">
+    <li><strong>Defense:</strong> Enhances surveillance, night vision, UAV imaging, and thermal visuals</li>
+    <li><strong>Identification:</strong> Improves face recognition, forensic imaging, and biometric accuracy</li>
+  </ul>
+
+  <blockquote style="
+    margin-top: 20px;
+    padding-left: 15px;
+    border-left: 4px solid #00ffffaa;
+    font-style: italic;
+    color: #ccc;
+  ">
+    “Enhancing every pixel is not just tech—it’s mission-critical.” — Sohom Mukherjee
+  </blockquote>
+</section>
+
+
+<body>
+  <div class="page">
+    <div class="container">
+      <!-- Raw Images -->
+      <div class="column">
+        <h2>Raw Images</h2>
+        <img src="C:\Users\KIIT\Desktop\AIML-Image-Enhancement-master\Dataset\image2.jpg" alt="Raw Image 1">
+        <img src="C:\Users\KIIT\Desktop\AIML-Image-Enhancement-master\Dataset\image1.jpg" alt="Raw Image 2">
+        <!-- Add more raw images if needed -->
+      </div>
+
+      <!-- Enhanced Images -->
+      <div class="column">
+        <h2>Enhanced Images</h2>
+        <img src="Results/result1.jpg" alt="Enhanced Image 1">
+        <img src="Results/result2.jpg" alt="Enhanced Image 2">
+        <!-- Add more enhanced images if needed -->
+      </div>
+    </div>
+
+    <footer><p>"In an age where visual data drives security, science, and safety, enhancing every pixel isn’t just technology—it’s a necessity."</p>
+      Visit: <a href="https://www.sohommukherjee.wordpress.com" target="_blank">www.sohommukherjee.wordpress.com</a>
+    </footer>
+  </div>
+</body>
+</html>
+
