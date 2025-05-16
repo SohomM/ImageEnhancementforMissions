@@ -9,6 +9,7 @@ This Python project enhances images to improve clarity and detail, crucial for d
 In high-stakes environments such as military operations and security systems, image quality can directly impact decision-making and operational success. Enhanced images help in:
 
 - Detecting threats in surveillance footage
+- Clear image for defence missions
 - Improving accuracy of facial recognition and biometric systems
 - Analyzing thermal or night-vision imagery with higher precision
 
@@ -36,3 +37,9 @@ In high-stakes environments such as military operations and security systems, im
 ## Getting Started
 
 Run the Python script to process images in your dataset and generate enhanced outputs:
+
+---
+
+## visit my portfolio
+
+www.sohommukherjee.wordpress.com
